@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>العيادة التخصصة للتجميل بالليزر في سلمية الطابق الثاني من المشفى التخصصي | حجز موعد</title>
+    <title>العيادة التخصصة للتجميل بالليزر | حجز موعد</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -14,210 +14,228 @@
             color: #2d2a2a;
             scroll-behavior: smooth;
         }
-        .container { max-width: 1300px; margin: 0 auto; padding: 0 30px; }
+        .container { max-width: 1300px; margin: 0 auto; padding: 0 20px; }
+        
+        /* رأسية مصغرة */
         .header {
-            background: rgba(255, 245, 240, 0.92);
+            background: rgba(255, 245, 240, 0.95);
             backdrop-filter: blur(8px);
             position: sticky;
             top: 0;
             z-index: 1000;
             border-bottom: 1px solid #ffe0d4;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
         .navbar {
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
-            gap: 20px;
-            padding: 18px 0;
+            gap: 10px;
+            padding: 10px 0;
         }
         .logo {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 10px;
             flex-wrap: wrap;
         }
         .logo-img {
-            height: 60px;
+            height: 45px;
             width: auto;
-            max-width: 180px;
+            max-width: 140px;
             object-fit: contain;
         }
         .logo-text h1 {
-            font-size: 1.6rem;
+            font-size: 1.1rem;
             font-weight: 800;
             background: linear-gradient(135deg, #C44569, #e66767);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
+            margin: 0;
+            line-height: 1.3;
         }
-        .logo-text p { font-size: 0.75rem; color: #b95a5a; }
-        .nav-links { display: flex; gap: 30px; }
-        .nav-links a { text-decoration: none; color: #4a3b3b; font-weight: 600; transition: 0.3s; }
+        .logo-text p {
+            font-size: 0.65rem;
+            color: #b95a5a;
+            margin: 0;
+            line-height: 1.2;
+        }
+        .nav-links { display: flex; gap: 15px; }
+        .nav-links a {
+            text-decoration: none;
+            color: #4a3b3b;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: 0.3s;
+        }
         .nav-links a:hover { color: #C44569; }
         .whatsapp-float {
             background-color: #25D366;
-            padding: 8px 20px;
+            padding: 6px 14px;
             border-radius: 40px;
             color: white;
             font-weight: 700;
+            font-size: 0.8rem;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             text-decoration: none;
-            box-shadow: 0 5px 12px rgba(37,211,102,0.3);
             transition: 0.3s;
         }
-        .whatsapp-float:hover { background-color: #1da851; transform: scale(1.02); }
-        .hero { padding: 70px 0 40px; text-align: center; }
-        .hero h2 { font-size: 2.8rem; font-weight: 800; color: #5e2e3e; margin-bottom: 20px; }
-        .hero p { font-size: 1.2rem; color: #7f5a5a; max-width: 700px; margin: 0 auto 30px; }
+        .whatsapp-float:hover { background-color: #1da851; }
+        
+        .hero { padding: 40px 0 30px; text-align: center; }
+        .hero h2 { font-size: 2rem; font-weight: 800; color: #5e2e3e; margin-bottom: 15px; }
+        .hero p { font-size: 1rem; color: #7f5a5a; max-width: 700px; margin: 0 auto 25px; }
         .btn-primary {
             background: linear-gradient(95deg, #C44569, #e66767);
-            padding: 14px 38px;
+            padding: 12px 30px;
             border-radius: 50px;
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: white;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             text-decoration: none;
             transition: 0.3s;
-            box-shadow: 0 8px 20px rgba(196,69,105,0.3);
         }
-        .btn-primary:hover { transform: translateY(-3px); }
         .section-title {
             text-align: center;
-            font-size: 2.4rem;
+            font-size: 1.8rem;
             font-weight: 800;
-            margin: 60px 0 20px;
+            margin: 40px 0 15px;
             color: #402e2e;
         }
         .section-title:after {
             content: '';
-            width: 80px;
-            height: 4px;
+            width: 60px;
+            height: 3px;
             background: #e66767;
             display: block;
-            margin: 12px auto 0;
+            margin: 8px auto 0;
             border-radius: 5px;
         }
         .devices-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 40px;
-            margin: 50px 0 30px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0 20px;
         }
         .device-card {
             background: white;
-            border-radius: 40px;
+            border-radius: 30px;
             overflow: hidden;
-            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.1);
-            transition: 0.35s ease;
-            padding: 25px 20px 30px;
+            box-shadow: 0 15px 25px -10px rgba(0,0,0,0.1);
+            transition: 0.3s ease;
+            padding: 20px 15px 25px;
             border: 1px solid rgba(230,103,103,0.2);
             text-align: center;
         }
-        .device-card:hover { transform: translateY(-10px); }
+        .device-card:hover { transform: translateY(-5px); }
         .device-img {
             width: 100%;
-            height: 220px;
-            margin-bottom: 20px;
-            border-radius: 28px;
+            height: 180px;
+            margin-bottom: 15px;
+            border-radius: 20px;
             overflow: hidden;
             background: #f9e9e3;
         }
         .device-img img { width: 100%; height: 100%; object-fit: cover; }
-        .device-card h3 { font-size: 1.9rem; font-weight: 800; color: #C44569; margin: 15px 0 10px; }
-        .device-card p { color: #5c4a4a; margin: 15px 0; line-height: 1.7; text-align: justify; }
-        .device-card ul { text-align: right; padding-right: 30px; margin: 15px 0; color: #5c4a4a; }
-        .device-card li { margin: 8px 0; }
+        .device-card h3 { font-size: 1.5rem; font-weight: 800; color: #C44569; margin: 10px 0 8px; }
+        .device-card p { color: #5c4a4a; margin: 10px 0; line-height: 1.6; font-size: 0.9rem; text-align: justify; }
+        .device-card ul { text-align: right; padding-right: 20px; margin: 10px 0; color: #5c4a4a; font-size: 0.85rem; }
+        .device-card li { margin: 5px 0; }
         .btn-wa-card {
             background: #25D366;
             border: none;
-            padding: 12px 24px;
+            padding: 8px 20px;
             border-radius: 50px;
             color: white;
             font-weight: 700;
-            margin-top: 12px;
+            margin-top: 10px;
             cursor: pointer;
-            font-size: 1rem;
+            font-size: 0.85rem;
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             transition: 0.2s;
         }
         .btn-wa-card:hover { background: #128C7E; }
         .booking-section {
             background: linear-gradient(125deg, #fff4ef, #fff0ea);
-            border-radius: 65px;
-            padding: 50px 40px;
-            margin: 70px 0 50px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            border-radius: 40px;
+            padding: 35px 25px;
+            margin: 50px 0 40px;
         }
         .booking-flex {
             display: flex;
             flex-wrap: wrap;
-            gap: 40px;
+            gap: 30px;
             justify-content: space-between;
             align-items: center;
         }
-        .booking-info { flex: 1; min-width: 250px; }
-        .booking-info h3 { font-size: 2rem; font-weight: 800; color: #402424; margin-bottom: 15px; }
-        .booking-info p { color: #826a6a; margin-bottom: 20px; }
+        .booking-info { flex: 1; min-width: 220px; }
+        .booking-info h3 { font-size: 1.5rem; font-weight: 800; color: #402424; margin-bottom: 10px; }
+        .booking-info p { color: #826a6a; margin-bottom: 15px; font-size: 0.9rem; }
         .contact-number {
             display: inline-flex;
             align-items: center;
             background: white;
-            padding: 12px 20px;
-            border-radius: 60px;
-            gap: 12px;
+            padding: 8px 15px;
+            border-radius: 50px;
+            gap: 10px;
             font-weight: 700;
             direction: ltr;
+            font-size: 0.9rem;
         }
         .booking-form {
             flex: 1.5;
             background: white;
-            border-radius: 55px;
-            padding: 35px 30px;
-            box-shadow: 0 30px 40px -20px rgba(0,0,0,0.2);
+            border-radius: 40px;
+            padding: 25px 20px;
+            box-shadow: 0 20px 30px -15px rgba(0,0,0,0.15);
         }
-        .form-group { margin-bottom: 20px; }
-        .form-group label { display: block; font-weight: 700; margin-bottom: 8px; color: #5e3e3e; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; font-weight: 700; margin-bottom: 6px; color: #5e3e3e; font-size: 0.85rem; }
         .form-group input, .form-group select, .form-group textarea {
             width: 100%;
-            padding: 14px 18px;
-            border-radius: 60px;
+            padding: 10px 15px;
+            border-radius: 50px;
             border: 1px solid #ffe0d4;
             background: #fefaf8;
             font-family: 'Cairo', sans-serif;
             outline: none;
+            font-size: 0.85rem;
         }
-        .form-group input:focus { border-color: #e66767; box-shadow: 0 0 0 3px rgba(230,103,103,0.2); }
+        .form-group input:focus { border-color: #e66767; }
         .btn-wa-submit {
             background: #25D366;
             width: 100%;
-            padding: 14px;
+            padding: 12px;
             border: none;
-            border-radius: 60px;
+            border-radius: 50px;
             font-weight: 800;
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: white;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
+            gap: 10px;
         }
         .btn-wa-submit:hover { background: #128C7E; }
-        footer { text-align: center; padding: 35px 0 25px; border-top: 1px solid #ffe0d4; color: #8f6f6f; }
-        @media (max-width: 800px) {
-            .navbar { flex-direction: column; }
-            .hero h2 { font-size: 2rem; }
-            .section-title { font-size: 1.9rem; }
-            .container { padding: 0 20px; }
+        footer { text-align: center; padding: 25px 0 20px; border-top: 1px solid #ffe0d4; color: #8f6f6f; font-size: 0.8rem; }
+        
+        @media (max-width: 700px) {
+            .navbar { flex-direction: column; align-items: stretch; text-align: center; }
+            .logo { justify-content: center; }
+            .nav-links { justify-content: center; }
+            .whatsapp-float { justify-content: center; }
+            .hero h2 { font-size: 1.6rem; }
+            .section-title { font-size: 1.5rem; }
         }
         .highlight { color: #C44569; font-weight: 700; }
     </style>
@@ -228,11 +246,11 @@
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="logo.jpg" alt="شعار العيادة" class="logo-img" style="height: 65px;">
+                <img src="logo.jpg" alt="شعار العيادة" class="logo-img">
                 <div class="logo-text">
                     <h1>العيادة التخصصة للتجميل بالليزر</h1>
                     <p>أحدث التقنيات لجراحات التجميل والليزر</p>
-                    <p>العنوان سلمية في الطابق الثاني من المشفى التخصصي</p>
+                    <p style="font-size: 0.6rem;">📍 سلمية - الطابق الثاني من المشفى التخصصي</p>
                 </div>
             </div>
             <div class="nav-links">
@@ -250,7 +268,7 @@
     <div class="container">
         <div class="hero">
             <h2>العيادة التخصصة للتجميل بالليزر <span class="highlight">جراحات تجميلية وتقنيات متكاملة</span></h2>
-            <p>خدمات متطورة: الفراكشنال ليزر (تضييق المنطقة النسائية والجراحات التجميلية)، الكرايو بالكافتيشن والليزر، الهيدروفيشال بالتبريد والديرما.</p>
+            <p>خدمات متطورة: الفراكشنال ليزر (تضييق المنطقة النسائية والجراحات التجميلية)، الكرايو بالكافتيشن والليزر، الهيدرافيشال بالتبريد والديرما.</p>
             <a href="#booking" class="btn-primary"><i class="fas fa-calendar-check"></i> احجز جلستك الآن</a>
         </div>
 
@@ -258,93 +276,86 @@
             <div class="section-title">⚡ أجهزتنا المتقدمة</div>
             <div class="devices-grid">
                 
-                <!-- الفراكشنال ليزر + تضييق المنطقة النسائية + جراحات -->
                 <div class="device-card">
                     <div class="device-img">
                         <img src="فراكشنال.jpg" alt="جهاز الفراكشنال ليزر">
                     </div>
                     <h3>الفراكشنال ليزر</h3>
-                    <p><strong>أحدث جيل في تجديد البشرة والجراحات التجميلية</strong> – تقنية الليزر الجزئي تحفز إنتاج الكولاجين بعمق لعلاج الندبات، التجاعيد، وشد الجلد. كما يُستخدم بشكل آمن وفعال في <strong>تضييق المنطقة النسائية (تجميل المهبل ورفع المثانة)</strong> وتحسين الندبات الناتجة عن العمليات الجراحية التجميلية (شدي الوجه، شد البطن، وغيرها).</p>
+                    <p><strong>أحدث جيل في تجديد البشرة والجراحات التجميلية</strong> – تقنية الليزر الجزئي لعلاج الندبات، التجاعيد، شد الجلد، <strong>تضييق المنطقة النسائية</strong>، وتحسين الندبات الجراحية.</p>
                     <ul>
-                        <li>✨ تجديد البشرة وإزالة الندبات (حَب الشباب، الجروح، العمليات)</li>
-                        <li>✨ تضييق المنطقة الحساسة (علاج ارتخاء المهبل بعد الولادة)</li>
-                        <li>✨ تحسين مظهر الندبات الجراحية وتوحيد لونها</li>
-                        <li>✨ شد الوجه والرقبة بدون جراحة</li>
-                          <li>✨ ازالة الثاليل والزوائد الجلدية الاخرى</li>
+                        <li>✨ تجديد البشرة وإزالة الندبات</li>
+                        <li>✨ تضييق المنطقة الحساسة (علاج ارتخاء المهبل)</li>
+                        <li>✨ تحسين الندبات الجراحية وتوحيد اللون</li>
+                        <li>✨ إزالة الثاليل والزوائد الجلدية</li>
                     </ul>
                     <button class="btn-wa-card" data-service="الفراكشنال ليزر (تضييق وجراحات)"><i class="fab fa-whatsapp"></i> حجز جلسة</button>
                 </div>
                 
-                <!-- الكرايو بالكافتيشن والليزر والامواج -->
                 <div class="device-card">
                     <div class="device-img">
-                        <img src="كرايو.jpg" alt="جهاز الكرايو بالكافتيشن والليزر">
+                        <img src="كرايو.jpg" alt="جهاز الكرايو">
                     </div>
-                    <h3>الكـرايـو والتنحيف المتكامل</h3>
-                    <p><strong>نحت الجسم بأحدث نظام رباعي التقنيات</strong> – يجمع جهازنا المتطور بين <strong>التبريد الموجه (كرايو)، والكافتيشن (الموجات فوق الصوتية لتكسير الدهون)، والليزر منخفض المستوى، والأمواج (الترددات الراديوية لشد الجلد)</strong>. هذه التقنية الرباعية تعمل معًا على إذابة الدهون العنيدة ونحت الجسم بدون ألم أو جراحة.</p>
+                    <h3>الكـرايـو والتنحيف</h3>
+                    <p><strong>نحت الجسم بأحدث نظام رباعي التقنيات</strong> – يجمع بين <strong>التبريد (كرايو)، والكافتيشن، والليزر البارد، والأمواج (RF)</strong> لإذابة الدهون ونحت الجسم.</p>
                     <ul>
                         <li>❄️ الكرايو: تجميد وتدمير الخلايا الدهنية</li>
                         <li>🌊 الكافتيشن: تحطيم الدهون بالموجات فوق الصوتية</li>
                         <li>🔆 الليزر البارد: تنشيط الدورة الليمفاوية</li>
                         <li>📡 الأمواج (RF): شد الجلد ومنع الترهلات</li>
                     </ul>
-                    <p><strong>النتيجة:</strong> تخفيض محيط الخصر والفخذين والأرداف بنسبة تصل إلى 30% بعد 3 جلسات مع بشرة مشدودة.</p>
-                    <button class="btn-wa-card" data-service="جهاز الكرايو بالكافتيشن والليزر والامواج"><i class="fab fa-whatsapp"></i> حجز جلسة</button>
+                    <button class="btn-wa-card" data-service="جهاز الكرايو بالكافتيشن والليزر"><i class="fab fa-whatsapp"></i> حجز جلسة</button>
                 </div>
                 
-                <!-- الهيدروفيشال + التبريد والديرما -->
                 <div class="device-card">
                     <div class="device-img">
                         <img src="هيدروفيشال.jpg" alt="جهاز الهيدروفيشال">
                     </div>
-                    <h3>الهيدروفيشال المتقدم</h3>
-                    <p><strong>تنظيف مائي فائق مع التبريد والديرما</strong> – جهاز الهيدروفيشال في عيادتنا مزود بتقنيات إضافية: <strong>معالجة البشرة بالتبريد المسكن (Cryo-Mask)</strong> لتقليل الاحمرار والالتهاب، و<strong>تقنية الديرما (Derma Microdermabrasion / Dermaplaning)</strong> لتقشير الخلايا الميتة وإزالة الشعيرات الزغبية بلطف. يجمع بين التنظيف العميق بالوتر، التقشير، الاستخلاص، الترطيب، التبريد، والديرما الميكانيكي.</p>
+                    <h3>الهيدرافيشال</h3>
+                    <p><strong>تنظيف مائي فائق مع التبريد والديرما</strong> – جهاز متطور مزود بتقنيات <strong>التبريد المسكن (Cryo-Mask)</strong> و<strong>الديرما</strong> لتقشير الخلايا الميتة.</p>
                     <ul>
                         <li>💧 إزالة الرؤوس السوداء والشوائب العميقة</li>
                         <li>❄️ تبريد فوري لتهدئة البشرة الحساسة</li>
                         <li>✨ تقشير بالديرما لإشراقة فورية</li>
-                        <li>💊 تغذية البشرة  خاصة حسب نوع البشرة</li>
-                         <li>💊  ترطيب البشرة و تنعيمها وشدها RF</li>
+                        <li>💊 ترطيب وتنعيم وشد بالـ RF</li>
                     </ul>
                     <button class="btn-wa-card" data-service="الهيدروفيشال بالتبريد والديرما"><i class="fab fa-whatsapp"></i> حجز جلسة</button>
                 </div>
             </div>
         </div>
 
-        <!-- حجز إلكتروني فقط عبر واتساب -->
+        <!-- حجز إلكتروني عبر واتساب -->
         <div id="booking" class="booking-section">
             <div class="booking-flex">
                 <div class="booking-info">
-                    <h3>📱 حجز موعد سريع عبر واتساب</h3>
-                    <p>املأ بياناتك وسنقوم بتأكيد حجزك خلال دقائق.</p>
+                    <h3>📱 حجز موعد سريع</h3>
+                    <p>املأ بياناتك وسنؤكد حجزك خلال دقائق عبر الواتساب.</p>
                     <div class="contact-number">
-                        <i class="fab fa-whatsapp" style="color:#25D366; font-size: 1.5rem;"></i>
+                        <i class="fab fa-whatsapp" style="color:#25D366; font-size: 1.2rem;"></i>
                         <span>+963 988 314 273</span>
                     </div>
                 </div>
                 <div class="booking-form">
-                    <h4 style="font-size: 1.6rem; margin-bottom: 20px; color:#C44569;">📝 نموذج الحجز</h4>
+                    <h4 style="font-size: 1.3rem; margin-bottom: 15px; color:#C44569;">📝 نموذج الحجز</h4>
                     <form id="waBookingForm">
                         <div class="form-group">
                             <label>الاسم الكامل</label>
                             <input type="text" id="fullName" required placeholder="أدخل اسمك">
                         </div>
                         <div class="form-group">
-                            <label>رقم الهاتف (للتواصل)</label>
+                            <label>رقم الهاتف</label>
                             <input type="tel" id="phoneNumber" required placeholder="مثال: 09xxxxxxxx">
                         </div>
                         <div class="form-group">
                             <label>اختر الخدمة</label>
                             <select id="serviceSelect">
-                                <option value="الفراكشنال ليزر (تضييق المنطقة النسائية والجراحات)">الفراكشنال ليزر (تضييق وجراحات)</option>
-                                <option value="جهاز الكرايو بالكافتيشن والليزر والامواج">الكـرايـو والتنحيف (كريو+كافتيشن+ليزر+RF)</option>
-                                <option value="الهيدروفيشال بالتبريد والديرما">الهيدروفيشال (تبريد وديرما)</option>
+                                <option value="الفراكشنال ليزر (تضييق وجراحات)">الفراكشنال ليزر (تضييق وجراحات)</option>
+                                <option value="الكـرايـو والتنحيف (كريو+كافتيشن+ليزر+RF)">الكـرايـو والتنحيف (كريو+كافتيشن+ليزر+RF)</option>
+                                <option value="الهيدروفيشال (تبريد وديرما)">الهيدروفيشال (تبريد وديرما)</option>
                             </select>
                         </div>
-                       
                         <div class="form-group">
                             <label>ملاحظات / المنطقة المراد معالجتها</label>
-                            <textarea rows="2" id="notes" placeholder="مثال: تضييق المهبل / تنحيف البطن / علاج ندبات"></textarea>
+                            <textarea rows="2" id="notes" placeholder="مثال: تضييق المهبل / تنحيف البطن"></textarea>
                         </div>
                         <button type="submit" class="btn-wa-submit"><i class="fab fa-whatsapp"></i> إرسال الحجز</button>
                     </form>
@@ -356,7 +367,8 @@
 
 <footer>
     <div class="container">
-        <p>© 2025 العيادة التخصصة للتجميل بالليزر | للحجز والاستفسار: <i class="fab fa-whatsapp"></i> <strong>0988314273</strong></p>
+        <p>© 2025 العيادة التخصصة للتجميل بالليزر | للحجز: <i class="fab fa-whatsapp"></i> <strong>0988314273</strong></p>
+        <p style="font-size: 0.7rem; margin-top: 5px;">📍 سلمية - الطابق الثاني من المشفى التخصصي</p>
     </div>
 </footer>
 
@@ -368,29 +380,41 @@
         window.open(BASE_WA_URL + encodeURIComponent(message), '_blank');
     }
 
-    // أزرار الحجز من البطاقات
+    // أزرار الحجز السريع
     document.querySelectorAll('.btn-wa-card').forEach(btn => {
         btn.addEventListener('click', () => {
             let service = btn.getAttribute('data-service');
-            sendWhatsAppMessage(`مرحباً، أرغب في حجز موعد لخدمة: ${service}. أرجو تأكيد الموعد.`);
+            let msg = `مرحباً، أرغب في حجز موعد لخدمة: ${service}. أرجو تأكيد الموعد.`;
+            sendWhatsAppMessage(msg);
         });
     });
 
-    // نموذج الحجز الرئيسي
+    // نموذج الحجز الرئيسي - بدون أي رموز تنسيق زائدة
     const form = document.getElementById('waBookingForm');
     form.addEventListener('submit', (e) => {
         e.preventDefault();
+        
         let name = document.getElementById('fullName').value.trim();
         let phone = document.getElementById('phoneNumber').value.trim();
-        let service = document.getElementById('serviceSelect').options[document.getElementById('serviceSelect').selectedIndex]?.text;
-        let date = document.getElementById('preferredDate').value;
+        let service = document.getElementById('serviceSelect').value;
         let notes = document.getElementById('notes').value.trim();
-        if (!name || !phone) { alert("يرجى إدخال الاسم ورقم الجوال"); return; }
-        let msg = `📋 *طلب حجز جديد*%0A👤 الاسم: ${name}%0A📞 الجوال: ${phone}%0A💎 الخدمة: ${service}%0A`;
-        if (date) msg += `📅 التاريخ: ${date}%0A`;
-        if (notes) msg += `✏️ ملاحظات: ${notes}%0A`;
-        msg += `🙏 نرجو تأكيد الموعد.`;
-        sendWhatsAppMessage(msg);
+        
+        if (!name || !phone) {
+            alert("يرجى إدخال الاسم ورقم الجوال");
+            return;
+        }
+        
+        // بناء الرسالة بشكل نظيف بدون أي رموز إضافية
+        let message = "طلب حجز جديد\n";
+        message += `الاسم: ${name}\n`;
+        message += `الجوال: ${phone}\n`;
+        message += `الخدمة: ${service}\n`;
+        if (notes) {
+            message += `ملاحظات: ${notes}\n`;
+        }
+        message += `نرجو تأكيد الموعد.`;
+        
+        sendWhatsAppMessage(message);
         form.reset();
     });
 </script>
